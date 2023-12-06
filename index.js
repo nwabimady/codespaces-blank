@@ -44,4 +44,25 @@ async function getUserData() {
     const userData = await getUserData()
     const { job } = userData
     return job}
-await getUserData()
+//await getUserData()
+
+class User{
+    constructor() {}
+    name = "Nwabisa Madyibi"
+    online = false
+    signIn() {}
+    logOut() {}
+    updateProfil() {}
+}
+
+const user = new User()
+
+class AdminUser extends User{
+    constructor() {
+        super()
+    }
+kickUser() {}
+moderateMessage() {}
+}
+
+const adminUser = new AdminUser()
