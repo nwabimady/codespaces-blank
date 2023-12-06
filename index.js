@@ -12,6 +12,8 @@ const arrC = [...arrA, ...arrB, 7,8,9 ]
 
 //console.log(arrC)
 
+function getUserData() {
+
 const user = {
     name: "Nwabisa",
     lastName: "Redwood-Sawyerr",
@@ -30,4 +32,16 @@ const { name, lastName, age, ...otherInfo } = user
 
 const myArray = [1,2,3]
 const [firstValue, secondValue, thirdValue] = myArray
-console.log(`First Value: ${firstValue}, Second Value: ${secondValue}, Third Value: ${thirdValue}`)
+//console.log(`First Value: ${firstValue}, Second Value: ${secondValue}, Third Value: ${thirdValue}`)
+
+//Promises
+//Function coming from a library
+
+
+}
+
+async function getUserData() {
+    const userData = await getUserData()
+    const { job } = userData
+    return job}
+await getUserData()
